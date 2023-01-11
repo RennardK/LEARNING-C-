@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  // This is a single line comment
+  cout << "Hello World!";
+  return 0;
+}
