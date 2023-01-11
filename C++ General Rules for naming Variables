@@ -1,0 +1,8 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+int main() {
+    cout << "This are the general rules for naming variables in C++";
+    cout << "Names can contain letters, digits and underscores\nNames must begin with a letter or an underscore (_)\nNames are case sensitive (myVar and myvar are different variables)\nNames cannot contain whitespaces or special characters like !, #, %, etc.\nReserved words (like C++ keywords, such as int) cannot be used as names";
+    return 0;
+}
