@@ -1,0 +1,7 @@
+#include <iostream>
+ using namespace std;
+  int main() {
+   cout<<"Hello World!"/*This is a multiple line 
+   comment in C++. 
+   The code in here wil not be executed.*/
+   }
