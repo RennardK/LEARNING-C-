@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+string myName = "Lenovo"; // string 
+int myAge = 3; //integer
+bool goodCondition = true; //boolean
+char model = 'd'; // character
+double modelNumber = 2023.012; // double
+
+int main(){
+    cout <<myName<<"\n"<< myAge<<"\n"<<goodCondition<<"\n"<<model<<modelNumber;
+    return 0;
+    }
