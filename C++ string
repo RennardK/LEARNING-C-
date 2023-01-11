@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string> // using string data type requires an additional header <string>
+
+using namespace std;
+ int main(){
+     string name = "My name is Joseh Champez";
+     cout << name;
+     return 0;
+ }
