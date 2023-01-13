@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+int main(){
+    int votingAge = 18;
+    string name;
+    int myAge;
+    
+    cout <<"Please type your name: ";
+    getline(cin, name);
+    cout <<"Please type your current age: ";
+    cin>>myAge;
+    
+    if (myAge >= votingAge){
+        cout<<"Hello, " + name +" you are allowed to vote";
+    }
+    else {
+        cout<<"Sorry "+ name +" you are not allowed to vote!";
+    }
+}
