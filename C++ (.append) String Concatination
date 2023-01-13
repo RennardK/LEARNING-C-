@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string firstName = "Rennard";
+    string x = " ";
+    string lastName = "Weru";
+    // cout << firstName + x + secondName << endl;
+    cout << firstName.append(x).append(lastName);
+    return 0;
+}
