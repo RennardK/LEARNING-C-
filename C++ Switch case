@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int day;
+    string type = "Type the day: ";
+    cout<<type;
+    cin>>day;
+    
+    switch(day){
+        case 1:
+        cout<<"Shoulder workouts";
+        break;
+        
+        case 2:
+        cout<<"Biceps and triceps workout";
+        break;
+        
+        case 3:
+        cout<<"abs workout";
+        break;
+        
+        case 4:
+        cout<<"legs and back";
+        
+        default:
+        cout<<"Chest Workouts";
+    }
+}
