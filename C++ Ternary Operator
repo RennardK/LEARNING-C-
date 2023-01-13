@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    string myName;
+    int length = 6;
+    cout<<"Type your name: ";
+    getline(cin, myName);
+    string result;
+    
+    result = (myName.length() >= length) ? "Your name has 6 or more than 6 characters." : "Your name has less than 6 characters.";
+    cout <<result;
+    return 0;
+}
