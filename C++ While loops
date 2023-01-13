@@ -1,0 +1,13 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main(){
+    int v = 23;
+    
+    while (v < 60){
+        cout << "I will always learn how to code."<< endl;
+        v += 1; //v++
+    }
+}
