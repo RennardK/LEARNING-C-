@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  bool isCodingFun = true; // will print 1
+  bool isFishTasty = false; // will print 0
+  cout << isCodingFun << "\n";
+  cout << isFishTasty;
+  return 0;
+}
