@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main(){
+    int v = 60;
+    do{
+        cout<<"I will always learn to code."<<endl;
+        v++;
+    } while (v < 60);
+}
