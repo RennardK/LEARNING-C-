@@ -1,0 +1,13 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {10, 2, 34, 14, 9};
+    cout << sizeof(arr)<<endl;
+    cout << sizeof(int)<<endl;
+    
+    int arrLength = sizeof(arr)/sizeof(int);
+    cout << arrLength<<endl;
+    return 0;
+}
