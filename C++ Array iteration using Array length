@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    string cities[] = {
+        "Nairobi", "Mombasa", "Kisumu", "Kampala", "Njinja", "Dodoma"
+    };
+    int citiesLength = sizeof(cities)/sizeof(string);
+    for (int i = 0; i < citiesLength; i++){
+        cout << cities[i] << endl;
+    }
+    return 0;
+}
