@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main(){
+    string food = "Ugali";
+    string &dinner =  food;
+    string breakfast = "tea and coffee";
+    
+    cout << &food << endl;
+    cout << &dinner << endl;
+    cout << &breakfast <<endl;
+    
+    return 0;
+}
