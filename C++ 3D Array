@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+int main(){
+    int myArray[][5][2] = {
+        {42, 43, 5, 64}, {659, 12, 50, 4}, {9, 36, 52, 8}, {7, 462, 87, 8}, {{54, 88}, {76, 51}}
+    };
+    cout << myArray[4][0][1]<<endl;
+    
+    cout << "Size of myArray: "<< sizeof(myArray)<<endl;
+    cout << "Size of int: "<<sizeof(int)<<endl;
+    return 0;
+}
