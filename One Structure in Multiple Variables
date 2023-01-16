@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main (){
+    struct {
+        int numPlate;
+        string Model;
+    } myCar1, myCar2;
+    
+    myCar1.numPlate = 24436;
+    myCar1.Model = "Mercedes Benz";
+    
+    myCar2.numPlate = 75893;
+    myCar2.Model = "BMW";
+    
+    cout << myCar1.numPlate<< endl;
+    cout << myCar1.Model<< "\n\n";
+    cout << myCar2.numPlate<< endl;
+    cout << myCar2.Model<< endl;
+    
+    return 0;
+}
