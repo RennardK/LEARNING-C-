@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main(){
+    string county = "Kakamega";
+    string* town = &county;
+    
+    cout << town << endl; // referencing using pointers
+    cout << *town << endl; // dereferencing using pointers
+    
+    *town = "Mumias";
+    cout << *town << endl; // prints Mumias
+    cout << town << endl; // prints 0x7ffe988819a0
+    cout << county << endl; // prints Mumias
+    
+    return 0;
+}
