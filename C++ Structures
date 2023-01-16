@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main (){
+    struct {
+        int myInt;
+        string myString;
+        bool myBool;
+        double myDouble;
+        float myFloat;
+    } myStructure;
+}
