@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+int main(){
+    struct database {
+        int age;
+        string name;
+        bool healthy;
+    };
+    
+    database person1;
+      person1.age = 21;
+      person1.name = "Reen";
+      person1.healthy = true;
+      
+    database person2;
+      person2.age = 45;
+      person2.name = "Jack";
+      person2.healthy = false;
+    
+    return 0;
+}
