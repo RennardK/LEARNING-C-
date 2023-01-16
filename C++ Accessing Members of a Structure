@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+int main (){
+    struct {
+        int myInt;
+        string myString;
+        bool myBool;
+        double myDouble;
+    } myStructure;
+    
+    myStructure.myInt = 23;
+    myStructure.myString = "I am coding this morning";
+    myStructure.myBool = true;
+    myStructure.myDouble = 2.54;
+    
+    cout << myStructure.myInt << endl;
+    cout << myStructure.myString << endl;
+    cout << myStructure.myBool << endl;
+    cout << myStructure.myDouble << endl;
+    
+    return 0;
+}
