@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int myFunc(int myArr[4]){
+    for (int i = 0; i < 4 ; i++){
+        cout << myArr[i]<< endl;
+    }
+}
+
+int main (){
+    int myArray[] = {54, 67, 4, 7};
+    
+    myFunc(myArray);
+    return 0;
+}
