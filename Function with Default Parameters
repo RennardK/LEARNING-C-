@@ -1,0 +1,13 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+void myName(string firstName = "John", string lastName = "Doe"){
+    cout << firstName.append(" ").append(lastName) << endl;
+}
+int main(){
+    myName("John", "Doe");// with arguments
+    myName(); // function without arguments
+    
+    return 0;
+}
