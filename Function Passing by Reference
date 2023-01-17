@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void increment(int& x, int& y){
+    int temp = x; // temp = 4
+    x = y; // x = 5
+    y = temp; // y = 4
+}
+
+int main(){
+    int a = 4;
+    int b = 5;
+    cout << "a before: " << a << " || Memory Address: "<< &a<<"\n\n";
+    cout << "b before: " << b << " || Memory Address: "<< &b<< "\n\n";
+    
+    increment(a, b);
+    
+    cout << "a after: " << a << " || Memory Address: "<< &a << "\n\n";
+    cout << "b after: " << b << " || Memory Address: "<< &a << "\n\n";
+    
+    return 0;
+}
