@@ -11,7 +11,7 @@ int myFunc(int myArr[4]){
 
 int main (){
     int myArray[] = {54, 67, 4, 7};
-    
+    int myArray1[5] = {54, 7, 8, 49, 3}
     myFunc(myArray);
     return 0;
 }
