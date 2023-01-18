@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int sumPoly(int m){
+    if (m > 1){
+    return m + sumPoly(m - 1);
+    } else {
+        return 0;
+    }
+}
+
+int main(){
+    int y = sumPoly(10);
+    cout << y << endl;
+    return 0;
+}
