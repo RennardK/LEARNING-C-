@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class myClass { //class name
+    public: //  Access specifier
+      int rooms; // first Attribute
+      string location; // 2nd Attribute
+      bool brandNew; // 3rd Attribute
+};
+
+int main(){
+    myClass house1;
+      house1.rooms = 12;
+      house1.location = "Nairobi";
+      house1.brandNew = true;
+    
+    myClass house2;
+      house2.rooms = 8;
+      house2.location = "Mombasa";
+      house2.brandNew = false;
+      
+    cout << house1.rooms << endl;
+    cout << house1.location << endl;
+    cout << house1.brandNew << endl;
+    cout << house2.rooms << endl;
+    cout << house2.location << endl;
+    cout << house2.brandNew << endl;
+    
+    return 0;
+}
