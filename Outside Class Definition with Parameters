@@ -1,0 +1,26 @@
+// Defining a method outside a class
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class myCar {
+    public :
+      string brand;
+      int modelNumber;
+      string itsCondition(string x);
+};
+
+string myCar::itsCondition(string x){
+    return x;
+}
+
+int main (){
+    myCar myCar1;
+    myCar1.brand = "Audi";
+    myCar1.modelNumber = 2435;
+    myCar1.itsCondition("brand new");
+    
+    return 0;
+}
