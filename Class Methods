@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+class myCar { // classKeyword and className 
+    public: // Access specifier
+      int yearOfManufacture; // attribute 1
+      string Model; // attribute 2
+      string myMethod(string m){
+          if (m.length() < 7){
+              return "Poor Name";
+          }
+          else {
+              return "Good Name";
+          }
+      } 
+};
+
+int main(){
+    myCar myOwn;
+      myOwn.yearOfManufacture = 2020;
+      myOwn.Model = "Toyota";
+      string n = myOwn.myMethod(myOwn.Model);
+      
+    cout << myOwn.yearOfManufacture << endl;
+    cout << n << endl;
+}
