@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+
+using namespace std;
+
+class myCar { // classKeyword and className 
+    public: // Access specifier
+      int yearOfManufacture; // attribute 1
+      string Model; // attribute 2
+};
+
+int main(){
+    myCar myOwn;
+      myOwn.yearOfManufacture = 2020;
+      myOwn.Model = "Toyota";
+      
+    cout << myOwn.yearOfManufacture << endl;
+}
