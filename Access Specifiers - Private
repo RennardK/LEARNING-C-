@@ -1,0 +1,19 @@
+// By default, all members of a class are private if you don't define the access specifier
+
+#include <iostream>
+using namespace std;
+
+class Car {
+    string brandName;
+    int yearManufactured;
+    int price;
+};
+
+int main(){
+    Car firstCar;
+      firstCar.brandName = "Subaru Forester";
+      firstCar.yearManufactured = 2020;
+      firstCar.price = 2500000;
+      
+    return 0;
+}
