@@ -1,0 +1,31 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Book{
+    public:
+    string name;
+    string author;
+    string yearOfPublication(int m);
+};
+
+string Book :: yearOfPublication(int m){
+    if (m > 2000){
+        return "New Publication";
+    }
+    else {
+        return "Old Publication";
+    }
+}
+
+int main(){
+    Book firstBook;
+      firstBook.name = "Tease";
+      firstBook.author = "Jaynhi Allen";
+      
+    cout << firstBook.yearOfPublication(1999) << endl;
+    
+    return 0;
+}
