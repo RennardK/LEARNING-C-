@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Book {
+    public:
+      string name;
+      string publisher;
+      int yearPublished;
+      Book (string a, string b, int c){
+          name =  a;
+          publisher = b;
+          yearPublished = c;
+      }
+};
+
+int main(){
+    Book firstBook("Spotlight", "Longhorn", 2020);
+    Book secondBook("Booster", "Macmillan", 2012);
+    Book thirdBook("Lay Me Down", "Opress", 2021);
+    
+    cout << firstBook.name << " "<< firstBook.publisher << " " << firstBook.yearPublished << endl;
+    cout << secondBook.name << " "<< secondBook.publisher << " " << secondBook.yearPublished << endl;
+    cout << thirdBook.name << " "<< thirdBook.publisher << " " << thirdBook.yearPublished << endl;
+    
+    return 0;
+}
