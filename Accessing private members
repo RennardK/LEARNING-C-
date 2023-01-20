@@ -1,0 +1,32 @@
+// Use the public set and get to access private members
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Phones{
+    private :
+      string location;
+    public :
+      string name;
+      int price;
+      void setLocation(string l){
+          location = l;
+      }
+      string getLocation(){
+          return location;
+      }
+};
+
+int main(){
+    Phones cheapest;
+      cheapest.name = "Tekno";
+      cheapest.price = 26000;
+      cheapest.setLocation("Nairobi");
+      string m = cheapest.getLocation();
+      
+      cout << m << endl;
+      
+      return 0;
+}
