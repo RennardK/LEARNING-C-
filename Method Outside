@@ -1,0 +1,24 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <string>
+
+using  namespace std;
+
+class myCar {
+  public:
+  int numberPlate;
+  string model;
+  int yearOfManufacture();
+};
+
+int myCar :: yearOfManufacture (){
+    return 2013;
+}
+
+int main(){
+    myCar firstCar;
+      firstCar.numberPlate =  54678;
+      firstCar.model = "Chevrolet";
+     cout << firstCar.yearOfManufacture() << endl;
+    return 0;
+}
