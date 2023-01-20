@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class laptops {
+    public : 
+      string name;
+      string operatingSys;
+      int price;
+    private: // private members
+      int ipAddress;
+      int imeNumber;
+};
+
+int main(){
+    laptops small;
+    small.name = "lenovo";
+    small.operatingSys = "Windows";
+    
+    small.ipAddress = 756839725; // throws an error
+    small.imeNumber = 64653673; // throws an error
+    
+    return 0;
+}
