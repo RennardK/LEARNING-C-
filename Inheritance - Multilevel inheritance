@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class country{ // parent class
+    public:
+      string leader;
+      int population;
+      string reputation(){
+          return "Has scenic beauty. \n";
+      }
+};
+
+class county: public country{ //child class
+};
+
+class constituency : public county{ //child class of child class - grandchild class
+};
+
+int main(){
+    constituency Westlands;
+    
+    Westlands.leader = "Member of Parliament";
+    Westlands.population = 53573;
+    
+    cout << Westlands.reputation() << endl;
+    
+    return 0;
+}
