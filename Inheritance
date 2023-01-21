@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Phones {
+   public:
+     string brandName;
+     int price;
+     string quality(){
+         return "This is a good phone. \n";
+     }
+};
+
+class smartphone : public Phones{
+    public:
+    int RAM; 
+    int ROM;
+};
+
+int main (){
+    smartphone firstPhone;
+      firstPhone.brandName = "Tekno";
+      firstPhone.price = 76435;
+      firstPhone.RAM = 4;
+      firstPhone.ROM = 64;
+    cout << firstPhone.quality() << endl;
+    return 0;
+}
