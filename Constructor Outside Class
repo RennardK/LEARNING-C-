@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Phones {
+    public:
+   string brandname;
+   int yearMan;
+   int price;
+   Phones (string x, int y, int z);
+};
+
+Phones::Phones(string x, int y, int z){
+    brandname = x;
+    yearMan = y;
+    price = z;
+}
+
+int main (){
+    Phones cheapest("Nokia", 2022, 23000);
+    Phones expensive("Redmi", 2023, 28000);
+    
+    cout << "Brand Name: " << cheapest.brandname <<" \n" << "Year Manufactured: " << cheapest.yearMan << "\n" << "Price: " << cheapest.price << endl << endl;
+    cout << "Brand Name: " << expensive.brandname <<" \n" << "Year Manufactured: " << expensive.yearMan << "\n" << "Price: " << expensive.price << endl;
+    
+    return 0;
+}
