@@ -1,0 +1,40 @@
+// MULTILEVEL INHERITANCE
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class electronics {
+    private:
+      int serialNum;
+    public: 
+      string electype;
+      string brandname;
+      int price;
+      int yearManuf;
+      void setSerialNum(int m){
+          serialNum = m;
+      }
+      int getSerialNum(){
+          return serialNum;
+      }
+};
+
+class inHouse : public electronics{
+    public:
+      int yearPurchased;
+      void myCond(){
+          cout << "In perfect condition.";
+      }        
+};
+
+int main(){
+    inHouse myHouse;
+      myHouse.setSerialNum(26645);
+      
+    cout << myHouse.getSerialNum() << endl;
+    
+    return 0;
+}
+
