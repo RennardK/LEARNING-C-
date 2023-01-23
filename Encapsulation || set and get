@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Phones {
+    private:
+      int price;
+    public:
+      string brandname;
+      int yearMan;
+      void setPrice(int m){
+          price = m; }
+      int getPrice(){
+          return price; }
+};
+
+int main (){
+    Phones cheapest;
+      cheapest.brandname = "Tekno";
+      cheapest.yearMan = 2023;
+      cheapest.setPrice(20333);
+      
+    cout << cheapest.getPrice() << endl;
+    return 0;
+}
